@@ -9,7 +9,7 @@ Swagger(app)
 model = pickle.load(open('finalized_model.pkl', 'rb'))
 
 
-@app.route('/')
+@app.route('/index')
 def home():
     return render_template('index.html')
   
